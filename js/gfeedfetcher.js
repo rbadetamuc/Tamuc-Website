@@ -58,6 +58,7 @@ gfeedfetcher.prototype.init=function(){
 			}
 		}(this.feedlabels[i])) //call Feed.load() to retrieve and output RSS feed.
 	}
+	return true;
 }
 
 
@@ -66,8 +67,7 @@ gfeedfetcher._formatdate=function(datestr, showoptions){
 	//var parseddate=(showoptions.indexOf("datetime")!=-1)? itemdate.toLocaleString() : (showoptions.indexOf("date")!=-1)? itemdate.toLocaleDateString() : (showoptions.indexOf("time")!=-1)? itemdate.toLocaleTimeString() : ""
 		var options = { year: 'numeric', month: 'long', day: 'numeric' };
 		var parseddate=(showoptions.indexOf("datetime")!=-1)? itemdate.toLocaleDateString('en-US', options) :""
-
-	return "<span class='datefield'>"+parseddate+"</span>"
+		return "<span class='datefield'>"+parseddate+"</span>"
 }
 
 
@@ -107,6 +107,13 @@ gfeedfetcher.prototype._signaldownloadcomplete=function(){
 		this._displayresult(this.feeds) //display results
 }
 
+gfeedfetcher.prototype._formatImage=function(getContent){
+	var div = document.createElement('div');
+	div.innerHTML = getContent;
+	var imgTag = div.getElementsByTagName('img')[0] ;
+	var imgSource = imgTag ? imgTag.getAttribute("src") : "";
+	return imgSource;
+}
 
 gfeedfetcher.prototype._displayresult=function(feeds){
 	var rssoutput=(this.itemcontainer=="<li>")? "<ul>\n" : ""
@@ -119,23 +126,31 @@ gfeedfetcher.prototype._displayresult=function(feeds){
 		var itemlink = feeds[i].link
 		//var itemreadmore="<a rel=\"nofollow\" href=\"" + feeds[i].link + "\" target=\"" + this.linktarget + "\" class=\"f-news-item__info_more f-more f-secondary-b\">" + "Read more" + " <i class=\"fa fa-chevron-circle-right\"></i></a>"
 		var itemdate=gfeedfetcher._formatdate(feeds[i].publishedDate, this.showoptions)
-		var itemdescription=/description/i.test(this.showoptions)? "<br />"+feeds[i].content : /snippet/i.test(this.showoptions)? "<br />"+feeds[i].contentSnippet  : ""
+		var itemdescription=/description/i.test(this.showoptions)? feeds[i].content : /snippet/i.test(this.showoptions)? feeds[i].contentSnippet  : ""
 		//rssoutput+=this.itemcontainer + itemtitle + " " + itemlabel + " " + itemdate + "\n" + itemdescription + "<br>" + itemreadmore  + this.itemcontainer.replace("<", "</") + "\n\n"
-	
+		var imgsrc = gfeedfetcher.prototype._formatImage(feeds[i].content)
+		var imgTag
+		if(imgsrc){
+			imgTag = '<img data-retina="" src="'+ imgsrc +'"  alt="'+itemtitle +'" />';
+		}else{
+			imgTag =  '<img data-retina="" src="img/homepage/cityofcommerce.jpg" alt="">';
+		}
 	rssoutput += '<div class="b-carousel-primary__item">'
 	rssoutput += '<div class="b-news-item f-news-item">'
-	rssoutput += '<div class="hidden-xs b-news-item__img view view-sixth"> <img data-retina="" src="img/homepage/cityofcommerce.jpg" alt="">'
+	rssoutput += '<div class="hidden-xs b-news-item__img view view-sixth"> '+imgTag
+	//rssoutput += '<div class="hidden-xs b-news-item__img view view-sixth"> <img data-retina="" src="img/homepage/cityofcommerce.jpg" alt="">'
 	rssoutput += '<div class="b-item-hover-action f-center mask">'
 	rssoutput += '<div class="b-item-hover-action__inner-btn_group"> <a href="'+ itemlink +'" class="b-btn f-btn b-btn-light f-btn-light info"><i class="fa fa-link"></i></a> </div>'
-	rssoutput += '</div> </div>  </div>'
+	rssoutput += '</div> </div> '
 	rssoutput += '<div class="b-news-item__info">'
 	rssoutput += '<div class="b-news-item__info_title f-news-item__info_title f-primary-b">'+ itemtitle + '</div>'
 	rssoutput += '<div class="b-news-item__info_additional"> <span class="f-news-item__info_additional_item b-news-item__info_additional_item"> <i class="fa fa-calendar-o"></i> '+ itemdate +' </span> </div>'
 	rssoutput += '<div class="b-news-item__info_text f-news-item__info_text">' + itemdescription + '</div>'
 	rssoutput += '<a class="f-news-item__info_more f-more f-secondary-b" href="'+ itemlink +'">Read more <i class="fa fa-chevron-circle-right"></i></a> </div>'
-	rssoutput += '</div>'
+	rssoutput += ' </div></div>'
 	rssoutput+=(this.itemcontainer=="<li>")? "</ul>" : ""
 	
 	}
+		rssoutput = rssoutput + "<div id='endoffeed'></div>"
 		this.feedcontainer.innerHTML=rssoutput
 }

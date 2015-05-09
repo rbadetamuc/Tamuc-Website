@@ -2707,7 +2707,7 @@ header {
 .b-header-ico-group .b-header-ico {
 	display: inline-block;
 	height: 100%;
-	padding-top: 38px;
+	padding-top:38px;
 }
 .b-header-ico-group .b-header-ico-cart-parent:hover .b-option-cart__items {
 	display: block;
@@ -2923,17 +2923,18 @@ header {
 }
 .b-search-box input {
 	display: none;
-	font-size: 1.2em;
+	font-size: 3.2em;
 	line-height: 1.33333;
 	position: absolute;
-	top: -7px;
+	top: -12px;
 	right: 4px;
 	z-index: 1;
-	border: 1px solid #eeb211;
-	height: 33px;
-	width: 781px;
+	border: 1px solid #083752;
+	height: 55px;
+	background: #083752;
+	width: 1020px;
 	padding: 0 30px 0 6px;
-	color: #666666;
+	color: #fff;
 }
 .b-search-box:hover input {
 	display: block;
@@ -13769,13 +13770,13 @@ to {
 }
 .b-option--resize .fa.fa-horizontal {
 	-moz-transform: rotate(270deg);
-	/* Для Firefox */
+	/* ??? Firefox */
       -ms-transform: rotate(270deg);
-	/* Для IE */
+	/* ??? IE */
       -webkit-transform: rotate(270deg);
-	/* Для Safari, Chrome, iOS */
+	/* ??? Safari, Chrome, iOS */
       -o-transform: rotate(270deg);
-	/* Для Opera */
+	/* ??? Opera */
       transform: rotate(270deg);
 }
 .b-option--resize .fa.fa-current, .b-option--resize .fa:hover {
@@ -14672,8 +14673,11 @@ textarea.b-product-card-textarea {
 }
 
 /* Custom CSS */
+/* Custom CSS */
 
-
+body{
+min-width:380px;
+}
 .b-categories-icons__item_icon .fa{
 width:30px;
 height:30px;
@@ -14702,26 +14706,36 @@ background-color:#edb111;
 color:#fff;
 }
 
-/* Footer */
 #footer {
 	font-family: 'din', sans-serif;;
+}
+.check-media {
+	display:none;
+	width:0;
 }
 .footerTop {
 	background-color:#edb111;
 	padding:5px 0px;
 	text-transform:uppercase;
 }
+.footerTop .footerTopLinks{
+display:table;
+width:100%;
+}
 #featureContact {
 	text-align:center;
 }
-.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeoLink {
-	font-size:2.65em;
+
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo {
+	font-size:3.8em;
 	font-weight:900;
 	font-family: 'din', sans-serif;;
 	text-decoration:none;
 	color:#fff;
+	display:table-cell;
+
 }
-.phoneNumberLink, .myLeoLink {
+.phoneNumberLink, .myLeo {
 	color:#004474
 }
 .myLeoLink{
@@ -14729,8 +14743,173 @@ color:#fff;
 	height:50px;
 	display:inline-block;
 	position:relative;
-	top:8px;
+	top:3px;
 }
+.featureContactSeperator {
+	border-left:1px solid #003976;
+	position:relative;
+	bottom:3px;
+	padding-top:20px
+}
+.featureContactVerticalSeperator {
+	display:block;
+	border-top:1px solid #003976;
+	margin-bottom:6px;
+}
+.addressLink {
+	float:right;
+}
+.systemsLink {
+	float:left;
+}
+.addressLink, .systemsLink {
+	font-family: 'din', sans-serif;;
+	color:#a17000;
+	text-decoration:none;
+	font-size:0.8em;
+	position:relative;
+	z-index:2;
+}
+.footerBottom {
+	font-family: 'din', sans-serif;;
+	background:#00314c;
+	padding:2em 0;
+}
+.footer-widget ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.footer-widget .foot-widget-title {
+	text-transform:uppercase;
+	color:#c0dff0;
+}
+.footer-widget ul li a, .footer-widget ul li {
+	text-decoration:none;
+	color:#afc7d6;
+	text-transform:uppercase;
+	font-size:0.9em;
+	line-height:2em;
+}
+.footer-widget ul li a:hover {
+	color:#fff;
+	transition:0.5s all;
+}
+.footer-widget ul li .text-reset {
+	text-transform:none !important;
+}
+.footer-widget ul li .fa {
+	margin-right:5px;
+}
+.footer-widget .footer-drop {
+	display:none;
+}
+@media screen and (max-width: 1100px){
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:3em;
+}
+.featureContactSeperator{
+padding-top:10px;
+}
+#featureContact{
+max-width:900px;
+margin:auto;
+}
+}
+@media screen and (max-width: 990px){
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:2.4em;
+}
+.featureContactSeperator{
+padding-top:10px;
+}
+#featureContact{
+max-width:800px;
+margin:auto;
+}
+}
+@media all and (min-width: 768px) {
+.check-media {
+ width:990px;
+}
+.footer-widget .foot-widget-area {
+ display:block !important;
+}
+}
+
+@media screen and (max-width: 767px){
+.b-categories-icons__item_icon .fa {
+  width: 20px;
+  height: 20px;
+}
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:2em;
+
+}
+.myLeoLink {
+width:110px;
+}
+.featureContactSeperator{
+padding-top:6px;
+margin:0px 5px;
+}
+.addressLink, .systemsLink{
+display:block;
+float:none;
+}
+.footer-widget .footer-drop {
+ display:inline;
+}
+.footer-widget .foot-widget-area {
+ display:none;
+}
+.footer-widget .foot-widget-title{
+cursor:pointer;
+}
+#featureContact{
+max-width:600px;
+margin:auto;
+}
+}
+@media screen and (max-width: 628px){
+.breakmobile{
+display:block;
+visible:hidden;
+height:1px;
+padding:0px;
+border:none;
+}
+.applyLink, .visitLink, .watchLink{
+font-size:2.8em;
+}
+ .applyLink, .visitLink, .watchLink,.phoneNumberLink, .giveLink, .myLeo{
+display:inline-block;
+}
+.footerTop .footerTopLinks{
+display:block;
+width:100%;
+}
+.myLeoLink{
+top:-10px;
+vertical-align:top;
+}
+.featureContactVerticalSeperator{
+position:relative;
+top:-13px;
+}
+.addressLink, .systemsLink{
+line-height:24px;
+font-size:1em;
+position:relative;
+top:-10px;
+
+}
+#featureContact{
+max-width:380px;
+margin:auto;
+}
+}
+--------------------------------------------------------
 .featureContactSeperator {
 	border-left:1px solid #003976;
 	padding-top:9px;
@@ -14821,6 +15000,9 @@ max-width:122px;
 }
 .is-fixed-header .b-header-r{
   padding-top: 14px;
+}
+.b-news-item__img{
+max-width:220px;
 }
 @media screen and (min-width: 1025px){
 .b-top-nav__1level .b-ico-dropdown{
