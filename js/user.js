@@ -741,20 +741,36 @@ jQuery(function ($) {
                 self.btnToTop();
             } else {
                 $('body').removeClass('is-fixed-header').css('padding-top', '0' + 'px');
+<<<<<<< HEAD
+                self.$header.removeClass('animated fadeInDown');
+=======
                 self.$header.removeClass('animated ');
+>>>>>>> origin/master
             }
         },
         checkHeaderPosition: function () {
             var self = this;
             if (self.windowScrollTop > self.headerBreakHeight && !self.headerFixed) {
                 $('body').addClass('is-fixed-header').css('padding-top', self.$header.outerHeight() + 'px');
+<<<<<<< HEAD
+                self.$header.addClass('animated fadeInDown');
+=======
                 self.$header.addClass('animated ');
+>>>>>>> origin/master
                 self.$slider.addClass('is-active').css('top', self.$header.outerHeight() + 'px');
                 self.headerFixed = true;
             }
             else if (self.windowScrollTop <= self.headerBreakHeight && self.headerFixed) {
                 $('body').removeClass('is-fixed-header').css('padding-top', '0px');
+<<<<<<< HEAD
                 self.$header.removeClass('animated');
+=======
+<<<<<<< HEAD
+                self.$header.removeClass('animated fadeInDown');
+=======
+                self.$header.removeClass('animated ');
+>>>>>>> origin/master
+>>>>>>> master
                 self.$slider.removeClass('is-active');
                 self.headerFixed = false;
             }
