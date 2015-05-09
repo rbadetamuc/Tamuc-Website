@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 /* Add here all your JS customizations */
 jQuery(document).ready(function($) {
 	checkSize();
@@ -16,7 +19,11 @@ function checkSize(){
 	});
 
 	}
+<<<<<<< HEAD
+}
+=======
 }
 =======
 /* Add here all your JS customizations */
 >>>>>>> origin/master
+>>>>>>> master
