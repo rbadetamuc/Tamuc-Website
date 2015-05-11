@@ -14902,7 +14902,7 @@ color:#edb111;
 background-color: rgba(17, 118, 237, 0.5); 
 }
 .b-top-nav-big .b-top-nav__dropdomn{
-box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+box-shadow:0px 5px 60px rgba(0,0,0,0.5);
 margin-top:2px;
 }
 .f-news-item__info_title a:hover{
