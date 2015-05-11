@@ -14902,11 +14902,30 @@ color:#edb111;
 background-color: rgba(17, 118, 237, 0.5); 
 }
 .b-top-nav-big .b-top-nav__dropdomn{
-box-shadow:0px 5px 60px rgba(0,0,0,0.5);
+box-shadow:0px 5px 10px rgba(0,0,0,0.5);
 margin-top:2px;
 }
 .f-news-item__info_title a:hover{
 color:#00314c;
+}
+@media screen and (max-width: 1024px){
+.b-top-nav__2level_wrap {
+  border-top: none;
+  padding: 0px 30px;
+}
+.b-top-nav__2level_title {
+  padding: 0 5px;
+  margin-bottom:5px;
+}
+.b-top-nav__2level a {
+  display: block;
+  padding: 9px 5px 9px;
+
+  border-top: 1px solid #e8e8e8;
+}
+.b-top-nav__2level i{
+display:none;
+}
 }
 @media screen and (max-width: 1100px){
 .applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
