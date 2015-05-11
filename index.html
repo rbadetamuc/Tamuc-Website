@@ -198,9 +198,10 @@
   <div class="container b-header__box b-relative"> <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="img/TAMUC-Logo.png" alt="Logo" /></a>
     <div class="b-header-r b-right b-header-r--icon">
       <div class="b-header-ico-group f-header-ico-group b-right">
-        <form>
+        <form action="http://www.google.com/search" id="searchForm" method="get" name="searchForm">
           <span class="b-search-box"> <i class="fa fa-search"></i>
-          <input type="text" placeholder="Enter your keywords"/>
+          <input id="searchField"  title="Search"  name="q" onblur="setSearch();" onfocus="clearSearch();" type="text" value="" placeholder="Enter your keywords"/>
+		  <input name="sitesearch" type="hidden" value="www.tamuc.edu" />
           </span> <span class="b-header-ico b-header-ico-cart-parent"> <a href="#" class="b-fa-shopping-cart"></a> </span>
         </form>
       </div>
@@ -212,126 +213,129 @@
           <li class="b-top-nav__1level f-top-nav__1level f-primary-b b-top-nav-big"> <a href="http://www.tamuc.edu/aboutUs/default.aspx"><i class="fa fa-cloud-download b-menu-1level-ico"></i>About Us<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
             <div class="b-top-nav__dropdomn">
               <ul class="b-top-nav__2level_wrap">
-                <li class="b-top-nav__2level_title f-top-nav__2level_title">Main Campus</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_2_colums.html"><i class="fa fa-angle-right"></i>Visiting Campus</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_3_colums.html"><i class="fa fa-angle-right"></i>Directions To Campus</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Campus Map</a></li>
-              </ul>
-              <ul class="b-top-nav__2level_wrap">
+                <li class="b-top-nav__2level_title f-top-nav__2level_title"> Main Campus</li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/oneStopShop/undergraduateAdmissions/scheduleTour/default.aspx"><i class="fa fa-angle-right"></i>Visiting Campus</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutUs/theCampus/directions/"><i class="fa fa-angle-right"></i>Directions To Campus</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/thecampus/campusmap.pdf"><i class="fa fa-angle-right"></i>Campus Map</a></li>
+            </ul>
+             <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Off Site Locations</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_1.html"><i class="fa fa-angle-right"></i>Online Courses </a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_2.html"><i class="fa fa-angle-right"></i>Navarro Partnership - Corsicana</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Midlothian Higher Education Center</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Mesquite Metroplex</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>A&amp;M-Commerce at Rockwall</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Collin Higher Education Center (CHEC)</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>The Universities Center at Dallas</a></li>
-              </ul>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/onlineCourses/"><i class="fa fa-angle-right"></i>Online Courses </a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/locations/navarroPartnership/default.aspx"><i class="fa fa-angle-right"></i>Navarro Partnership - Corsicana</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/locations/midlothian/default.aspx"><i class="fa fa-angle-right"></i>Midlothian Higher Education Center</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/locations/mesquiteMetro/default.aspx"><i class="fa fa-angle-right"></i>Mesquite Metroplex</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/locations/rockwall/"><i class="fa fa-angle-right"></i>A&amp;M-Commerce at Rockwall</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/locations/collinHigherEducationCenter/default.aspx"><i class="fa fa-angle-right"></i>Collin Higher Education Center (CHEC)</a></li>
+				   <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/locations/dallas/default.aspx"><i class="fa fa-angle-right"></i>The Universities Center at Dallas</a></li>
+								
+            </ul>
               <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">News & information</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_pricing.html"><i class="fa fa-angle-right"></i>The East Texan Issue Special</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_1.html"><i class="fa fa-angle-right"></i>The East Texan issue</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_2.html"><i class="fa fa-angle-right"></i>History &amp; Traditions</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_3.html"><i class="fa fa-angle-right"></i>Our Mission</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_faqs_page.html"><i class="fa fa-angle-right"></i>Events Calendar</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team.html"><i class="fa fa-angle-right"></i>KETR Radio</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team_detail.html"><i class="fa fa-angle-right"></i>News</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team_detail.html"><i class="fa fa-angle-right"></i>The Pride Alumni Magazine</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team_detail.html"><i class="fa fa-angle-right"></i>The East Texan</a></li>
-              </ul>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="https://issuu.com/thespecial"><i class="fa fa-angle-right"></i>The East Texan Issue Special</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="https://issuu.com/tamuc.easttexan"><i class="fa fa-angle-right"></i>The East Texan issue</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/historyTraditions/default.aspx"><i class="fa fa-angle-right"></i>History &amp; Traditions</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/ourmission/default.aspx"><i class="fa fa-angle-right"></i>Our Mission</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://ems.tamuc.edu/MasterCalendar/MasterCalendar.aspx"><i class="fa fa-angle-right"></i>Events Calendar</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://ketr.org/"><i class="fa fa-angle-right"></i>KETR Radio</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://sites.tamuc.edu/news/"><i class="fa fa-angle-right"></i>News</a></li>
+				  <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://issuu.com/tamuc/docs/pride_fall_2013_issuu_2?e=1322258/6087762"><i class="fa fa-angle-right"></i>The Pride Alumni Magazine</a></li>
+				    <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://tamuceasttexan.com/"><i class="fa fa-angle-right"></i>The East Texan</a></li>
+		
+            </ul>
               <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Administration</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_coming_soon.html"><i class="fa fa-angle-right"></i>Office of the President</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_coming_soon_v2.html"><i class="fa fa-angle-right"></i>Provost and Vice President for Academic Affairs</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_error_404.html"><i class="fa fa-angle-right"></i>Vice President for Business &amp; Administration</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_loading_v1.html"><i class="fa fa-angle-right"></i>Vice President for Institutional Advancement</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Vice President for Student Access &amp; Success</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Institutional Effectiveness</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Committees and Councils</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Policies</a></li>
-              </ul>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/administrativeOffices/president/default.aspx"><i class="fa fa-angle-right"></i>Office of the President</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/administrativeOffices/academicAffairs/default.aspx"><i class="fa fa-angle-right"></i>Provost and Vice President for Academic Affairs</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/administrativeOffices/businessAdministration/default.aspx"><i class="fa fa-angle-right"></i>Vice President for Business &amp; Administration</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/administrativeOffices/institutionalAdvancement/default.aspxl"><i class="fa fa-angle-right"></i>Vice President for Institutional Advancement</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/administrativeOffices/studentAccessAndSuccess/default.aspx"><i class="fa fa-angle-right"></i>Vice President for Student Access &amp; Success</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutUs/institutionalEffectiveness/default.aspx"><i class="fa fa-angle-right"></i>Institutional Effectiveness</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutus/administrativeOffices/committeesAndCouncils/default.aspx"><i class="fa fa-angle-right"></i>Committees and Councils</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/aboutUs/policiesProceduresStandardsStatements/"><i class="fa fa-angle-right"></i>Policies</a></li>
+            </ul>
             </div>
           </li>
           <!--START MULTI MENU--> 
           <!--START MULTI MENU-->
           <li class="b-top-nav__1level f-top-nav__1level f-primary-b b-top-nav-big"> <a href="http://www.tamuc.edu/academics/default.aspx"><i class="fa fa-cloud-download b-menu-1level-ico"></i>Academics<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
             <div class="b-top-nav__dropdomn nav__dropdomn_size5">
-              <ul class="b-top-nav__2level_wrap ">
+               <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Business</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_2_colums.html"><i class="fa fa-angle-right"></i>MBA Programs</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_3_colums.html"><i class="fa fa-angle-right"></i>Graduate Programs</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Undergraduate Programs</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Accounting</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Economics &amp; Finance</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Marketing &amp; Business Analytics</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Management</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Advising &amp; Student Services</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_4_colums.html"><i class="fa fa-angle-right"></i>Career Services</a></li>
-              </ul>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/academics/mbaPrograms/default.aspx"><i class="fa fa-angle-right"></i>MBA Programs</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/academics/graduatePrograms/default.aspx"><i class="fa fa-angle-right"></i>Graduate Programs</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/academics/undergraduatePrograms/default.aspx"><i class="fa fa-angle-right"></i>Undergraduate Programs</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/departments/accounting/default.aspx"><i class="fa fa-angle-right"></i>Accounting</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/departments/economicsFinance/default.aspx"><i class="fa fa-angle-right"></i>Economics &amp; Finance</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/departments/businessAdministration/default.aspx"><i class="fa fa-angle-right"></i>Marketing &amp; Business Analytics</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/departments/marketingManagement/default.aspx"><i class="fa fa-angle-right"></i>Management</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/departments/Student%20Services/default.aspx"><i class="fa fa-angle-right"></i>Advising &amp; Student Services</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/business/departments/career-services/default.aspx"><i class="fa fa-angle-right"></i>Career Services</a></li>
+            </ul>
               <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Education &amp; Human Services</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_1.html"><i class="fa fa-angle-right"></i>Curriculum and Instruction</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_2.html"><i class="fa fa-angle-right"></i>Educational Leadership</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Health and Human Performance</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Nursing</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Psychology, Counseling, &amp; Special Education</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Social Work</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Educator Certification</a></li>
-              </ul>
-              <ul class="b-top-nav__2level_wrap">
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/departments/curriculumInstruction/default.aspx"><i class="fa fa-angle-right"></i>Curriculum and Instruction</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/departments/educationalLeadership/default.aspx"><i class="fa fa-angle-right"></i>Educational Leadership</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/departments/healthHumanPerformance/default.aspx"><i class="fa fa-angle-right"></i>Health and Human Performance</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/departments/nursing/default.aspx"><i class="fa fa-angle-right"></i>Nursing</a></li>
+				<li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/departments/psychologyCounselingSpecialEducation/default.aspx"><i class="fa fa-angle-right"></i> Psychology, Counseling & Special Education</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/departments/socialWork/default.aspx"><i class="fa fa-angle-right"></i>Social Work</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/educationHumanServices/educatorCertificationAcademicServices/default.aspx"><i class="fa fa-angle-right"></i>Educator Certification</a></li>
+            </ul>
+            <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Humanities, Social Sciences &amp; Arts</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_pricing.html"><i class="fa fa-angle-right"></i>Art</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_1.html"><i class="fa fa-angle-right"></i>History</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_2.html"><i class="fa fa-angle-right"></i>Liberal Studies</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_3.html"><i class="fa fa-angle-right"></i>Mass Media, Communication &amp; Theatre</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_faqs_page.html"><i class="fa fa-angle-right"></i>Music</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team.html"><i class="fa fa-angle-right"></i>Political Science</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team_detail.html"><i class="fa fa-angle-right"></i>Sociology &amp; Criminal Justice</a></li>
-              </ul>
-              <ul class="b-top-nav__2level_wrap">
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://sites.tamuc.edu/art/"><i class="fa fa-angle-right"></i>Art</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/history/default.aspx"><i class="fa fa-angle-right"></i>History</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/humanitiessocialsciencesarts/departments/liberalStudies/default.aspx"><i class="fa fa-angle-right"></i>Liberal Studies</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/massMediaCommunicationTheatre/default.aspx"><i class="fa fa-angle-right"></i>Mass Media, Communication &amp; Theatre</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/music/default.aspx"><i class="fa fa-angle-right"></i>Music</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/humanitiessocialsciencesarts/departments/politicalScience/default.aspx"><i class="fa fa-angle-right"></i>Political Science</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/humanitiesSocialSciencesArts/departments/sociologyCriminalJustice/default.aspx"><i class="fa fa-angle-right"></i>Sociology &amp; Criminal Justice<</a></li>
+            </ul>
+            <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Science &amp; Engineering </li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_coming_soon.html"><i class="fa fa-angle-right"></i>Agricultural Sciences</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_coming_soon_v2.html"><i class="fa fa-angle-right"></i>Applied Sciences</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_error_404.html"><i class="fa fa-angle-right"></i>Biological &amp; Environmental Science</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_loading_v1.html"><i class="fa fa-angle-right"></i>Chemistry</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Computer Science &amp; Information Systems</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Engineering &amp; Technology</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Mathematics</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="extra_pages_loading_v2.html"><i class="fa fa-angle-right"></i>Physics &amp; Astronomy</a></li>
-              </ul>
-              <ul class="b-top-nav__2level_wrap">
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/agriculturalSciences/default.aspx"><i class="fa fa-angle-right"></i>Agricultural Sciences</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/appliedSciences/default.aspx"><i class="fa fa-angle-right"></i>Applied Sciences</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/biologicalEnvironmentalSciences/default.aspx"><i class="fa fa-angle-right"></i>Biological &amp; Environmental Science</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/chemistry/default.aspx"><i class="fa fa-angle-right"></i>Chemistry</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/computerScienceInformationSystems/default.aspx"><i class="fa fa-angle-right"></i>Computer Science &amp; Information Systems</a></li>
+				 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/engineeringTechnology/default.aspx"><i class="fa fa-angle-right"></i>Engineering &amp; Technology</a></li>
+				  <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/mathematics/default.aspx"><i class="fa fa-angle-right"></i>Mathematics</a></li>
+				   <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/colleges/scienceEngineeringAgriculture/departments/physicsAstronomy/default.aspx"><i class="fa fa-angle-right"></i>Physics &amp; Astronomy</a></li>
+            </ul>
+			 <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Graduate School</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_forgot_username_password.html"><i class="fa fa-angle-right"></i>Graduate Studies</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_log_in_page.html"><i class="fa fa-angle-right"></i>Graduate Admissions</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_log_in_page_v2.html"><i class="fa fa-angle-right"></i>Request Information</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="page_registration_page.html"><i class="fa fa-angle-right"></i>Apply Online</a></li>
-              </ul>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/graduateStudies.aspx"><i class="fa fa-angle-right"></i>Graduate Studies</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/graduateAdmissions/default.aspx"><i class="fa fa-angle-right"></i>Graduate Admissions</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/request-form.aspx"><i class="fa fa-angle-right"></i>Request Information</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/applyOnline.aspx"><i class="fa fa-angle-right"></i>Apply Online</a></li>
+
+            </ul>
             </div>
           </li>
           <!--START MULTI MENU--> 
           <!--START MULTI MENU-->
           <li class="b-top-nav__1level f-top-nav__1level f-primary-b b-top-nav-big"> <a href="http://www.tamuc.edu/admissions/default.aspx"><i class="fa fa-cloud-download b-menu-1level-ico"></i>Admissions<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
             <div class="b-top-nav__dropdomn">
-              <ul class="b-top-nav__2level_wrap">
+             <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Tuition/Costs/ Financial Aid</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_2_colums.html"><i class="fa fa-angle-right"></i>Financial Aid &amp; Scholarship</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_gallery_3_colums.html"><i class="fa fa-angle-right"></i>Tuition &amp; Fee Costs</a></li>
-              </ul>
-              <ul class="b-top-nav__2level_wrap">
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/tuitionCosts/financialAidandScholarships/"><i class="fa fa-angle-right"></i>Financial Aid &amp; Scholarship</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/tuitioncosts/"><i class="fa fa-angle-right"></i>Tuition &amp; Fee Costs</a></li>
+            </ul>
+            <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Graduate Admissions</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_1.html"><i class="fa fa-angle-right"></i>Request information</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_2.html"><i class="fa fa-angle-right"></i>Graduate Admissions</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="our_services_version_3.html"><i class="fa fa-angle-right"></i>Apply Online</a></li>
-              </ul>
-              <ul class="b-top-nav__2level_wrap">
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/request-form.aspx"><i class="fa fa-angle-right"></i>Request information</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/graduateAdmissions/default.aspx"><i class="fa fa-angle-right"></i>Graduate Admissions</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/academics/graduateSchool/applyOnline.aspx"><i class="fa fa-angle-right"></i>Apply Online</a></li>
+            </ul>
+            <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Undergraduate Admissions</li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_pricing.html"><i class="fa fa-angle-right"></i>Request information</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_1.html"><i class="fa fa-angle-right"></i>Steps To Apply</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_2.html"><i class="fa fa-angle-right"></i>Schedule a Tour</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_version_3.html"><i class="fa fa-angle-right"></i>Orientation</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_faqs_page.html"><i class="fa fa-angle-right"></i>One Stop Shop</a></li>
-                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="about_us_meet_our_team.html"><i class="fa fa-angle-right"></i>Online Catalog</a></li>
-              </ul>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/requestinfo.aspx"><i class="fa fa-angle-right"></i>Request information</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/oneStopShop/undergraduateAdmissions/FreshmanAdmissions/default.aspx"><i class="fa fa-angle-right"></i>Steps To Apply</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/oneStopShop/undergraduateAdmissions/scheduleTour/default.aspx"><i class="fa fa-angle-right"></i>Schedule a Tour</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/oneStopShop/orientation/default.aspx"><i class="fa fa-angle-right"></i>Orientation</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/admissions/onestopshop/"><i class="fa fa-angle-right"></i>One Stop Shop</a></li>
+                <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://catalog.tamuc.edu/"><i class="fa fa-angle-right"></i>Online Catalog</a></li>
+            </ul>
             </div>
           </li>
           <!--START MULTI MENU--> 
@@ -339,7 +343,7 @@
 		       <li class="b-top-nav__1level f-top-nav__1level f-primary-b b-top-nav-big">
         <a href="http://www.tamuc.edu/CampusLife/default.aspx"><i class="fa fa-cloud-download b-menu-1level-ico"></i>Athletics<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
         <div class="b-top-nav__dropdomn">
-            <ul class="b-top-nav__2level_wrap">
+             <ul class="b-top-nav__2level_wrap">
                 <li class="b-top-nav__2level_title f-top-nav__2level_title">Information</li>
                 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://lionathletics.com/sports/2013/11/7/Memorial%20Stadium.aspx"><i class="fa fa-angle-right"></i>Facilities</a></li>
                 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://lionathletics.com/hof.aspx"><i class="fa fa-angle-right"></i>Hall Of Fame</a></li>
@@ -390,7 +394,7 @@
                 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="https://tamuccampusdining.sodexomyway.com/?"><i class="fa fa-angle-right"></i>Residence Halls and Rates</a></li>
             </ul>
             <ul class="b-top-nav__2level_wrap">
-                <li class="b-top-nav__2level_title f-top-nav__2level_title">Campus Activities<</li>
+                <li class="b-top-nav__2level_title f-top-nav__2level_title">Campus Activities</li>
                 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href=""><i class="fa fa-angle-right"></i>Dining Services</a></li>
                 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/campuslife/studentcenter/FSL/default.aspx"><i class="fa fa-angle-right"></i>Greek Life</a></li>
                 <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="http://www.tamuc.edu/campuslife/studentcenter/studentGovernmentAssociation/default.aspx"><i class="fa fa-angle-right"></i>Student Government </a></li>
@@ -777,7 +781,7 @@ document.getElementById("si" + "mple" + "_spc").value = "51197000507951-51197000
     </div>
   </div>
 </footer>
-
+<div class='check-media'></div>
 <script src="js/breakpoints.js"></script> 
 <script src="js/jquery/jquery-1.11.1.min.js"></script> 
 <!-- bootstrap --> 
@@ -851,6 +855,6 @@ document.getElementById("si" + "mple" + "_spc").value = "51197000507951-51197000
 <script src="js/loader.js"></script> 
 <script src="js/scrollIt/scrollIt.min.js"></script> 
 <script src="js/modules/navigation-slide.js"></script> 
-
+<script src="js/custom.js"></script>
 </body>
 </html>

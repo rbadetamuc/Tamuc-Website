@@ -14804,6 +14804,110 @@ width:100%;
 .footer-widget .footer-drop {
 	display:none;
 }
+
+
+.featureContactSeperator {
+	border-left:1px solid #003976;
+	padding-top:9px;
+	position:relative;
+	bottom:3px;
+}
+.featureContactVerticalSeperator {
+	display:block;
+	border-top:1px solid #003976;
+	margin-bottom:6px;
+}
+.addressLink {
+	float:right;
+}
+.systemsLink {
+	float:left;
+}
+.addressLink, .systemsLink {
+	font-family: 'din', sans-serif;;
+	color:#a17000;
+	text-decoration:none;
+	font-size:0.8em;
+}
+.footerBottom {
+	font-family: 'din', sans-serif;;
+	background:#00314c;
+	padding:2em 0;
+}
+.footer-widget ul {
+	list-style:none;
+}
+.footer-widget .foot-widget-title {
+	text-transform:uppercase;
+	color:#c0dff0;
+}
+.footer-widget ul li a, .footer-widget ul li {
+	text-decoration:none;
+	color:#afc7d6;
+	text-transform:uppercase;
+	font-size:0.9em;
+	line-height:2em;
+}
+.footer-widget ul li a:hover {
+	color:#fff;
+}
+.footer-widget ul li .text-reset {
+	text-transform:none !important;
+}
+.footer-widget ul li .fa {
+	margin-right:5px;
+}
+.footer-widget .footer-drop {
+	display:none;
+}
+
+/* New Change 05/05 */
+.l-body-boxed{
+	-moz-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=60, Direction=135, Color='#444444')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=60, Direction=135, Color='#444444');
+}
+
+.b-top-nav__1level>a{
+color:#AFCADA
+}
+header.animated .b-ico-dropdown{
+top:39px;
+}
+header.animated .b-header-r--icon .b-header-ico-group{
+top: 18px;
+}
+.is-fixed-header .b-header__box{
+padding-top:18px;
+padding-bottom:20px;
+}
+.is-fixed-header .b-logo img{
+max-width:122px;
+}
+.is-fixed-header .b-header-r{
+  padding-top: 14px;
+}
+.b-news-item__img{
+max-width:220px;
+}
+u{
+text-decoration:none;
+}
+.tp-caption a:hover { 
+color:#edb111; 
+}
+.b-employee-item.b-employee-item--color .view-sixth .mask ,.view-sixth .mask{ 
+background-color: rgba(17, 118, 237, 0.5); 
+}
+.b-top-nav-big .b-top-nav__dropdomn{
+box-shadow:0px 5px 60px rgba(0,0,0,0.5);
+margin-top:2px;
+}
+.f-news-item__info_title a:hover{
+color:#00314c;
+}
 @media screen and (max-width: 1100px){
 .applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
 font-size:3em;
@@ -14909,61 +15013,7 @@ max-width:380px;
 margin:auto;
 }
 }
---------------------------------------------------------
-.featureContactSeperator {
-	border-left:1px solid #003976;
-	padding-top:9px;
-	position:relative;
-	bottom:3px;
-}
-.featureContactVerticalSeperator {
-	display:block;
-	border-top:1px solid #003976;
-	margin-bottom:6px;
-}
-.addressLink {
-	float:right;
-}
-.systemsLink {
-	float:left;
-}
-.addressLink, .systemsLink {
-	font-family: 'din', sans-serif;;
-	color:#a17000;
-	text-decoration:none;
-	font-size:0.8em;
-}
-.footerBottom {
-	font-family: 'din', sans-serif;;
-	background:#00314c;
-	padding:2em 0;
-}
-.footer-widget ul {
-	list-style:none;
-}
-.footer-widget .foot-widget-title {
-	text-transform:uppercase;
-	color:#c0dff0;
-}
-.footer-widget ul li a, .footer-widget ul li {
-	text-decoration:none;
-	color:#afc7d6;
-	text-transform:uppercase;
-	font-size:0.9em;
-	line-height:2em;
-}
-.footer-widget ul li a:hover {
-	color:#fff;
-}
-.footer-widget ul li .text-reset {
-	text-transform:none !important;
-}
-.footer-widget ul li .fa {
-	margin-right:5px;
-}
-.footer-widget .footer-drop {
-	display:none;
-}
+
 
 @media screen and (max-width: 767px){
 .b-categories-icons__item_icon .fa {
@@ -14973,37 +15023,6 @@ margin:auto;
 
 }
 
-/* New Change 05/05 */
-.l-body-boxed{
-	-moz-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=60, Direction=135, Color='#444444')";
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=60, Direction=135, Color='#444444');
-}
-
-.b-top-nav__1level>a{
-color:#AFCADA
-}
-header.animated .b-ico-dropdown{
-top:39px;
-}
-header.animated .b-header-r--icon .b-header-ico-group{
-top: 18px;
-}
-.is-fixed-header .b-header__box{
-padding-top:18px;
-padding-bottom:20px;
-}
-.is-fixed-header .b-logo img{
-max-width:122px;
-}
-.is-fixed-header .b-header-r{
-  padding-top: 14px;
-}
-.b-news-item__img{
-max-width:220px;
-}
 @media screen and (min-width: 1025px){
 .b-top-nav__1level .b-ico-dropdown{
 top:39px;
@@ -15025,6 +15044,9 @@ width:25%;
 }
 .b-top-nav__dropdomn.nav__dropdomn_size5 .b-top-nav__2level_wrap{
 width:20%;
+}
+.b-top-nav__1level > a:hover{
+color:#ffffff;
 }
 }
 
