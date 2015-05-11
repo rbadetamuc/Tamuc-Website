@@ -14726,14 +14726,16 @@ width:100%;
 	text-align:center;
 }
 
-.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo {
+.applyLink, .visitLink, .watchLink, .giveLink,.phoneNumberLink, .myLeo{
 	font-size:3.8em;
 	font-weight:900;
 	font-family: 'din', sans-serif;;
 	text-decoration:none;
 	color:#fff;
 	display:table-cell;
-
+}
+.applyLink:hover, .visitLink:hover, .watchLink:hover, .giveLink:hover{
+	color:#004474;
 }
 .phoneNumberLink, .myLeo {
 	color:#004474
