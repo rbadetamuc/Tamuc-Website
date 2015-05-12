@@ -4,6 +4,13 @@ jQuery(document).ready(function($) {
 	$(window).resize(function(){
    		checkSize();
 	});
+	$('.b-search-box .fa').click(function(){
+		var target = '.b-search-box #searchField';
+		$(target).toggle();
+		if($(target).is(':visible')){
+			$(target).focus();
+		}
+	});
 });
 function checkSize(){
 	if($('.check-media').width() != 990){
