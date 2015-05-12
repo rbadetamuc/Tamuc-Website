@@ -152,6 +152,6 @@ gfeedfetcher.prototype._displayresult=function(feeds){
 	rssoutput+=(this.itemcontainer=="<li>")? "</ul>" : ""
 	
 	}
-		rssoutput = rssoutput + "<div id='endoffeed'></div>"
+		//rssoutput = rssoutput + "<div id='endoffeed'></div>"
 		this.feedcontainer.innerHTML=rssoutput
 }
