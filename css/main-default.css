@@ -14914,6 +14914,9 @@ color:#00314c;
 .b-header-ico-group .fa{
 font-size:16px;
 }
+.b-carousel-primary__item{
+display:none;
+}
 @media screen and (max-width: 1024px){
 .b-top-nav__2level_wrap {
   border-top: none;

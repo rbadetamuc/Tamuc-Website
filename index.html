@@ -198,9 +198,9 @@
   <div class="container b-header__box b-relative"> <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="img/TAMUC-Logo.png" alt="Logo" /></a>
     <div class="b-header-r b-right b-header-r--icon">
       <div class="b-header-ico-group f-header-ico-group b-right">
-        <form action="http://www.google.com/search" id="searchForm" method="get" name="searchForm">
-          <span class="b-search-box"> <i class="fa fa-search"></i>
-          <input id="searchField"  title="Search"  name="q" onblur="setSearch();" onfocus="clearSearch();" type="text" value="" placeholder="Enter your keywords"/>
+        <form action="http://www.google.com/search" id="searchForm" method="get" name="searchForm" autocomplete="off">
+          <span class="b-search-box" title="Search on TAMUC"> <i class="fa fa-search"></i>
+          <input id="searchField"  name="q" onblur="setSearch();" onfocus="clearSearch();" type="text" value="" placeholder="Enter your keywords"/>
 		  <input name="sitesearch" type="hidden" value="www.tamuc.edu" />
           </span> <span class="b-header-ico b-header-ico-cart-parent"> <a href="#" class="b-fa-shopping-cart"></a> </span>
         </form>
@@ -699,9 +699,8 @@ document.getElementById("si" + "mple" + "_spc").value = "51197000507951-51197000
     <h2 class="f-center f-secondary-l">what's <strong class="f-secondary-b">news</strong> at <strong>A&amp;M-Commerce</strong></h2>
     <p class="b-infoblock-description f-desc-section f-center f-employee__desc f-small">Read the latest stories from <a style="color:#edb111" href="http://sites.tamuc.edu/news/">Pride Online</a></p>
         <div class="b-carousel-primary">
-
 		 <script type="text/javascript">
-			var newsfeed=new gfeedfetcher("rssfeeds", "j-carousel-primary", "_new")
+			var newsfeed=new gfeedfetcher("rssfeeds", "j-carousel-rss", "_new")
 			newsfeed.addFeed("Tamuc Blog", "http://sites.tamuc.edu/news/category/homepage/feed/");
 			newsfeed.displayoptions("label datetime snippet");
 			newsfeed.setentrycontainer("div");
@@ -810,9 +809,6 @@ document.getElementById("si" + "mple" + "_spc").value = "51197000507951-51197000
 <!-- jquery ui --> 
 <script src="js/jqueryui/jquery-ui.js"></script> 
 <!-- end jquery ui --> 
-<script type="text/javascript" language="javascript"
-        src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCfVS1-Dv9bQNOIXsQhTSvj7jaDX7Oocvs"></script> 
-<!-- Modules --> 
 <script src="js/modules/sliders.js"></script> 
 <script src="js/modules/ui.js"></script> 
 <script src="js/modules/retina.js"></script> 
@@ -823,12 +819,6 @@ document.getElementById("si" + "mple" + "_spc").value = "51197000507951-51197000
 <script src="js/modules/color-themes.js"></script> 
 <!-- End Modules --> 
 
-<!-- Audio player --> 
-<script type="text/javascript" src="js/audioplayer/js/jquery.jplayer.min.js"></script> 
-<script type="text/javascript" src="js/audioplayer/js/jplayer.playlist.min.js"></script> 
-<script src="js/audioplayer.js"></script> 
-<!-- end Audio player --> 
-
 <!-- radial Progress --> 
 <script src="js/radial-progress/jquery.easing.1.3.js"></script> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script> 
@@ -836,10 +826,6 @@ document.getElementById("si" + "mple" + "_spc").value = "51197000507951-51197000
 <script src="js/progressbars.js"></script> 
 <!-- end Progress --> 
 
-<!-- Google services --> 
-<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script> 
-<script src="js/google-chart.js"></script> 
-<!-- end Google services --> 
 <script src="js/j.placeholder.js"></script> 
 
 <!-- Fancybox --> 

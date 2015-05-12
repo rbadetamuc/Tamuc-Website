@@ -4,7 +4,7 @@
 // Updated June 14th, 10': Fixed issue in IE where labels would sometimes be associated with the incorrect feed items
 // -------------------------------------------------------------------
 
-var gfeedfetcher_loading_image="indicator.gif" //Full URL to "loading" image. No need to config after this line!!
+var gfeedfetcher_loading_image="js/bxslider/images/bx_loader.gif" //Full URL to "loading" image. No need to config after this line!!
 
 google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
 
@@ -44,7 +44,7 @@ this.itemcontainer="<"+containerstr.toLowerCase()+">"
 gfeedfetcher.prototype.init=function(){
 	this.feedsfetched=0 //reset number of feeds fetched to 0 (in case init() is called more than once)
 	this.feeds=[] //reset feeds[] array to empty (in case init() is called more than once)
-	this.feedcontainer.innerHTML='<p><img src="'+gfeedfetcher_loading_image+'" /> Retrieving RSS feed(s)</p>'
+	this.feedcontainer.innerHTML='<p align="center" class="loadingrss"><img src="'+gfeedfetcher_loading_image+'" /> &nbsp; Loading News</p>'
 	var displayer=this
 	for (var i=0; i<this.feedurls.length; i++){ //loop through the specified RSS feeds' URLs
 		var feedpointer=new google.feeds.Feed(this.feedurls[i]) //create new instance of Google Ajax Feed API
@@ -115,6 +115,7 @@ gfeedfetcher.prototype._formatImage=function(getContent){
 	return imgSource;
 }
 
+
 gfeedfetcher.prototype._displayresult=function(feeds){
 	var rssoutput=(this.itemcontainer=="<li>")? "<ul>\n" : ""
 	gfeedfetcher._sortarray(feeds, this.sortstring)
@@ -139,19 +140,21 @@ gfeedfetcher.prototype._displayresult=function(feeds){
 	rssoutput += '<div class="b-carousel-primary__item">'
 	rssoutput += '<div class="b-news-item f-news-item">'
 	rssoutput += '<div class="hidden-xs b-news-item__img view view-sixth"> '+imgTag
-	//rssoutput += '<div class="hidden-xs b-news-item__img view view-sixth"> <img data-retina="" src="img/homepage/cityofcommerce.jpg" alt="">'
 	rssoutput += '<div class="b-item-hover-action f-center mask"><div class="b-item-hover-action__inner">'
-	rssoutput += '<div class="b-item-hover-action__inner-btn_group"> <a href="'+ itemlink +'" class="b-btn f-btn b-btn-light f-btn-light info"><i class="fa fa-link"></i></a> </div>'
+	rssoutput += '<div class="b-item-hover-action__inner-btn_group"> <a href="'+ itemlink +'" class="b-btn f-btn b-btn-light f-btn-light info" ><i class="fa fa-link"></i></a> </div>'
 	rssoutput += '</div> </div> </div>'
 	rssoutput += '<div class="b-news-item__info">'
 	rssoutput += '<div class="b-news-item__info_title f-news-item__info_title f-primary-b">'+titleTag+'</div>'
 	rssoutput += '<div class="b-news-item__info_additional"> <span class="f-news-item__info_additional_item b-news-item__info_additional_item"> <i class="fa fa-calendar-o"></i> '+ itemdate +' </span> </div>'
 	rssoutput += '<div class="b-news-item__info_text f-news-item__info_text">' + itemdescription + '</div>'
-	rssoutput += '<a class="f-news-item__info_more f-more f-secondary-b" href="'+ itemlink +'">Read more <i class="fa fa-chevron-circle-right"></i></a> </div>'
+	rssoutput += '<a class="f-news-item__info_more f-more f-secondary-b" href="'+ itemlink +'" >Read more <i class="fa fa-chevron-circle-right"></i></a> </div>'
 	rssoutput += ' </div></div>'
 	rssoutput+=(this.itemcontainer=="<li>")? "</ul>" : ""
 	
 	}
 		//rssoutput = rssoutput + "<div id='endoffeed'></div>"
-		this.feedcontainer.innerHTML=rssoutput
+		this.feedcontainer.innerHTML +=rssoutput + "<div id='endoffeed'></div>"			
 }
+/*
+
+*/
