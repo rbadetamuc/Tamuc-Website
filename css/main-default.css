@@ -3457,18 +3457,20 @@ header.animated .b-ico-dropdown {
 .f-top-nav__2level_title.is-active-top-nav__2level-title {
 	color: #00314c;
 }
- @media screen and (min-width: 1025px) {
- .f-top-nav__2level_title {
- font-size: 1.07692em;
- line-height: 1;
- color: #00314c;
- text-transform: uppercase;
+ @media screen and (min-width: 1025px) { 
+.f-top-nav__2level_title { 
+font-size: 1.2em; 
+line-height: 1; 
+color: #00314c; 
+text-transform: uppercase; 
 }
 }
-.b-top-nav__2level_title {
-	list-style: none;
-	margin-bottom: 6px;
-}
+.b-top-nav__2level_title { 
+padding: 0 5px; 
+height: 30px; 
+list-style:none;
+margin-bottom: 6px; 
+} 
  @media screen and (max-width: 1024px) {
  .b-top-nav__2level_title {
  margin-bottom: 20px;
@@ -15042,13 +15044,41 @@ margin:auto;
 }
 }
 
-
+@media screen and (max-width: 1025px){
+.b-search-box input{
+max-width: 600px;
+}
+}
 @media screen and (max-width: 767px){
 .b-categories-icons__item_icon .fa {
   width: 20px;
   height: 20px;
 }
-
+.b-header__box{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.b-logo img{
+max-width:100px;
+}
+.b-header-ico-group .fa,.f-top-nav-show-slide{
+font-size:18px;
+padding:0px;
+line-height:100%;
+}
+span.b-header-ico.b-header-ico-cart-parent{
+  padding-top: 24px;
+}
+.b-search-box input{
+height:66px;
+  top: -24px;
+}
+.b-search-box input{
+max-width: 320px;
+}
+.check-media {
+ width:0px;
+}
 }
 
 @media screen and (min-width: 1025px){
@@ -15086,9 +15116,7 @@ color:#ffffff;
 .b-header-r--icon .b-header-ico-group{
 right:45px;
 }
-.b-search-box input{
-max-width: 320px;
-}
+
 header.animated .b-ico-dropdown{
 border-color: transparent transparent #D8A801 transparent;
 top:inherit;
