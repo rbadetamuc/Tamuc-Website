@@ -15083,8 +15083,8 @@ color:#ffffff;
 .b-header-ico-group .fa {
     display: inherit;
 }
-.b-search-box{
-right:40px;
+.b-header-r--icon .b-header-ico-group{
+right:45px;
 }
 .b-search-box input{
 max-width: 320px;
