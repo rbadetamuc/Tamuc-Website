@@ -137,7 +137,7 @@ gfeedfetcher.prototype._displayresult=function(feeds){
 		}else{
 			imgTag =  '<img data-retina="" src="img/homepage/cityofcommerce.jpg" alt="">';
 		}
-	rssoutput += '<div class="b-carousel-primary__item">'
+	rssoutput += '<div class="b-carousel-primary__item ">'
 	rssoutput += '<div class="b-news-item f-news-item">'
 	rssoutput += '<div class="hidden-xs b-news-item__img view view-sixth"> '+imgTag
 	rssoutput += '<div class="b-item-hover-action f-center mask"><div class="b-item-hover-action__inner">'

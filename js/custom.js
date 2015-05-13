@@ -14,7 +14,6 @@ jQuery(document).ready(function($) {
 	var gfeedfetcher_loading_image="js/bxslider/images/bx_loader.gif" 
 	$( window ).load(function() {	
 		var slider = $('.j-carousel-rss').bxSlider({
-				minSlides:2,
 				maxSlides:2,
 				controls: false,
 				slideMargin: 30,
