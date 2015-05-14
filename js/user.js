@@ -30,10 +30,10 @@ jQuery(function ($) {
             $('.j-top-nav-show-slide').on('click', function () {
                 var $cloneNav = $('.j-menu-container .j-top-nav');
                 if (!self.dropMenuVisible) {
-                    $('.j-top-nav').clone().prependTo(self.mobileMenuContainer).addClass('b-top-nav-dropdown').addClass('f-top-nav-dropdown').animate({height: "toggle"}, 700);
+                    $('.j-top-nav').clone().prependTo(self.mobileMenuContainer).addClass('b-top-nav-dropdown').addClass('f-top-nav-dropdown').animate({height: "toggle"}, 300);
                     self.dropMenuVisible = true;
                 } else {
-                    $cloneNav.animate({height: "toggle"}, 700, function () {
+                    $cloneNav.animate({height: "toggle"}, 300, function () {
                         $cloneNav.remove();
                     });
                     self.dropMenuVisible = false;
@@ -47,7 +47,7 @@ jQuery(function ($) {
                 var $liFirstLevel = $(this).parents('.b-top-nav__1level');
                 $liFirstLevel.toggleClass('is-active-top-nav__dropdown');
                 $liFirstLevel.find('.fa').toggleClass('fa-arrow-circle-down').toggleClass('fa-arrow-circle-up');
-                $liFirstLevel.find('.b-top-nav__dropdomn').slideToggle('slow');
+                $liFirstLevel.find('.b-top-nav__dropdomn').slideToggle(600);
                 return false;
             });
         },
