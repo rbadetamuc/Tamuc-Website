@@ -27,13 +27,16 @@ jQuery(document).ready(function($) {
 	});
 });
 function checkSize(){
-	if($('.check-media').width() != 990){
+	if ($(window).width() < BREAK.LG) {
+		$('.foot-widget-area').hide();
 	 // Mobile stuff.
-	$('.foot-widget-title').click(function(e) {
+	$('.foot-widget-title').on( "click", function(e) {
 		e.preventDefault();
 		$(this).next().slideToggle();
 		$(this).find('.fa').ToggleClass('');
 	});
-
+	}else{
+		$('.foot-widget-title').off( "click");
+		$('.foot-widget-area').show();
 	}
 }

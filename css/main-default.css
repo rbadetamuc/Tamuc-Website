@@ -14712,10 +14712,7 @@ color:#fff;
 #footer {
 	font-family: 'din', sans-serif;;
 }
-.check-media {
-	display:none;
-	width:0;
-}
+
 .footerTop {
 	background-color:#edb111;
 	padding:5px 0px;
@@ -14962,14 +14959,7 @@ max-width:800px;
 margin:auto;
 }
 }
-@media all and (min-width: 768px) {
-.check-media {
- width:990px;
-}
-.footer-widget .foot-widget-area {
- display:block !important;
-}
-}
+
 
 @media screen and (max-width: 767px){
 .b-categories-icons__item_icon .fa {
@@ -15076,9 +15066,7 @@ height:66px;
 .b-search-box input{
 max-width: 320px;
 }
-.check-media {
- width:0px;
-}
+
 }
 
 @media screen and (min-width: 1025px){
