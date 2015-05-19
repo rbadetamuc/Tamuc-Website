@@ -754,8 +754,8 @@ jQuery(function ($) {
             }
             else if (self.windowScrollTop <= self.headerBreakHeight && self.headerFixed) {
                 $('body').removeClass('is-fixed-header').css('padding-top', '0px');
-<<<<<<< HEAD
                 self.$header.removeClass('animated');
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 self.$header.removeClass('animated');
@@ -767,6 +767,8 @@ jQuery(function ($) {
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
                 self.$slider.removeClass('is-active');
                 self.headerFixed = false;
             }

@@ -2924,6 +2924,7 @@ header {
 .b-search-box input {
 	display: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 	font-size: 3.2em;
@@ -2932,12 +2933,17 @@ header {
 	font-size: 3.2em;
 	line-height: 1.33333;
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
 	position: absolute;
 	top: -36px;
 	right: 4px;
 	z-index: 1;
 	width: 1020px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> test-branch
 	padding: 0 30px 0 10px;
 	height: 92px;
 	border: 0;
@@ -2946,6 +2952,7 @@ header {
 	font-size: 1.8em;
 	background-color: #0e1d31;
 	color: #afcada;
+<<<<<<< HEAD
 =======
 	padding: 0 30px 0 6px;
 	color: #fff;
@@ -2969,6 +2976,8 @@ header {
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
 }
 /* .b-search-box:hover input {
 	display: block;
@@ -13811,6 +13820,7 @@ to {
 .b-option--resize .fa.fa-horizontal {
 	-moz-transform: rotate(270deg);
 	/* ??? Firefox */
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 	/* ??? Firefox */
@@ -13825,18 +13835,22 @@ to {
 =======
 	/* Для Firefox */
 >>>>>>> master
+=======
+>>>>>>> test-branch
       -ms-transform: rotate(270deg);
 	/* ??? IE */
       -webkit-transform: rotate(270deg);
 	/* ??? Safari, Chrome, iOS */
       -o-transform: rotate(270deg);
-<<<<<<< HEAD
 	/* ??? Opera */
+<<<<<<< HEAD
 =======
 	/* Для Opera */
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
       transform: rotate(270deg);
 }
 .b-option--resize .fa.fa-current, .b-option--resize .fa:hover {
@@ -14733,6 +14747,7 @@ textarea.b-product-card-textarea {
 }
 
 /* Custom CSS */
+<<<<<<< HEAD
 /* Custom CSS */
 
 body{
@@ -14742,17 +14757,22 @@ min-width:380px;
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> test-branch
 /* Custom CSS */
 
 body{
 min-width:380px;
 }
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
 .b-categories-icons__item_icon .fa{
 width:30px;
 height:30px;
@@ -14781,6 +14801,7 @@ background-color:#edb111;
 color:#fff;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #footer {
 	font-family: 'din', sans-serif;;
@@ -14812,11 +14833,18 @@ color:#fff;
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+#footer {
+	font-family: 'din', sans-serif;;
+}
+
+>>>>>>> test-branch
 .footerTop {
 	background-color:#edb111;
 	padding:5px 0px;
 	text-transform:uppercase;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -14824,24 +14852,19 @@ color:#fff;
 <<<<<<< HEAD
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
 .footerTop .footerTopLinks{
 display:table;
 width:100%;
 }
-<<<<<<< HEAD
-#featureContact {
-	text-align:center;
-}
-
-.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo {
-	font-size:3.8em;
-=======
 #featureContact {
 	text-align:center;
 }
 
 .applyLink, .visitLink, .watchLink, .giveLink,.phoneNumberLink, .myLeo{
 	font-size:3.8em;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -14853,11 +14876,14 @@ width:100%;
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
 	font-weight:900;
 	font-family: 'din', sans-serif;;
 	text-decoration:none;
 	color:#fff;
 	display:table-cell;
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 .applyLink:hover, .visitLink:hover, .watchLink:hover, .giveLink:hover{
@@ -14878,6 +14904,13 @@ width:100%;
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+}
+.applyLink:hover, .visitLink:hover, .watchLink:hover, .giveLink:hover{
+	color:#004474;
+}
+.phoneNumberLink, .myLeo {
+>>>>>>> test-branch
 	color:#004474
 }
 .myLeoLink{
@@ -14885,9 +14918,12 @@ width:100%;
 	height:50px;
 	display:inline-block;
 	position:relative;
+<<<<<<< HEAD
 	top:3px;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> test-branch
 	top:3px;
 }
 .featureContactSeperator {
@@ -14949,8 +14985,252 @@ width:100%;
 .footer-widget .footer-drop {
 	display:none;
 }
+<<<<<<< HEAD
 
 
+.featureContactSeperator {
+	border-left:1px solid #003976;
+	padding-top:9px;
+	position:relative;
+	bottom:3px;
+}
+.featureContactVerticalSeperator {
+	display:block;
+	border-top:1px solid #003976;
+	margin-bottom:6px;
+}
+.addressLink {
+	float:right;
+}
+.systemsLink {
+	float:left;
+}
+.addressLink, .systemsLink {
+	font-family: 'din', sans-serif;;
+	color:#a17000;
+	text-decoration:none;
+	font-size:0.8em;
+}
+.footerBottom {
+	font-family: 'din', sans-serif;;
+	background:#00314c;
+	padding:2em 0;
+}
+.footer-widget ul {
+	list-style:none;
+}
+.footer-widget .foot-widget-title {
+	text-transform:uppercase;
+	color:#c0dff0;
+}
+.footer-widget ul li a, .footer-widget ul li {
+	text-decoration:none;
+	color:#afc7d6;
+	text-transform:uppercase;
+	font-size:0.9em;
+	line-height:2em;
+}
+.footer-widget ul li a:hover {
+	color:#fff;
+}
+.footer-widget ul li .text-reset {
+	text-transform:none !important;
+}
+.footer-widget ul li .fa {
+	margin-right:5px;
+}
+.footer-widget .footer-drop {
+	display:none;
+}
+
+/* New Change 05/05 */
+.l-body-boxed{
+	-moz-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=60, Direction=135, Color='#444444')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=60, Direction=135, Color='#444444');
+}
+
+.b-top-nav__1level>a{
+color:#AFCADA
+}
+header.animated .b-ico-dropdown{
+top:39px;
+}
+header.animated .b-header-r--icon .b-header-ico-group{
+top: 18px;
+}
+.is-fixed-header .b-header__box{
+padding-top:18px;
+padding-bottom:20px;
+}
+.is-fixed-header .b-logo img{
+max-width:122px;
+}
+.is-fixed-header .b-header-r{
+  padding-top: 14px;
+}
+.b-news-item__img{
+max-width:220px;
+}
+u{
+text-decoration:none;
+}
+.tp-caption a:hover { 
+color:#edb111; 
+}
+.b-employee-item.b-employee-item--color .view-sixth .mask ,.view-sixth .mask{ 
+background-color: rgba(17, 118, 237, 0.5); 
+}
+.b-top-nav-big .b-top-nav__dropdomn{
+box-shadow:0px 5px 60px rgba(0,0,0,0.5);
+margin-top:2px;
+}
+.f-news-item__info_title a:hover{
+color:#00314c;
+}
+.b-header-ico-group .fa{
+font-size:16px;
+}
+.b-carousel-primary__item{
+display:none;
+}
+@media screen and (max-width: 1024px){
+.b-top-nav__2level_wrap {
+  border-top: none;
+  padding: 0px 30px;
+}
+.b-top-nav__2level_title {
+  padding: 15px 5px;
+  margin:0px;
+  display:block;
+  height:auto;
+  color:#00314C
+}
+.is-active-top-nav__dropdown > a {
+background:#e5e5e5;
+}
+.b-top-nav-big .b-top-nav__dropdomn{
+box-shadow:none;
+}
+.b-top-nav__2level a {
+  display: block;
+  padding: 9px 5px 9px;
+  border-top: 1px solid #e8e8e8;
+}
+.b-top-nav__2level i{
+display:none;
+}
+}
+@media screen and (max-width: 1100px){
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:3em;
+}
+.featureContactSeperator{
+padding-top:10px;
+}
+#featureContact{
+max-width:900px;
+margin:auto;
+}
+}
+@media screen and (max-width: 990px){
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:2.4em;
+}
+.featureContactSeperator{
+padding-top:10px;
+}
+#featureContact{
+max-width:800px;
+margin:auto;
+}
+}
+
+=======
+>>>>>>> test-branch
+
+
+<<<<<<< HEAD
+}
+.myLeoLink {
+width:110px;
+}
+.featureContactSeperator{
+padding-top:6px;
+margin:0px 5px;
+}
+.addressLink, .systemsLink{
+display:block;
+float:none;
+}
+.footer-widget .footer-drop {
+ display:inline;
+}
+.footer-widget .foot-widget-area {
+ display:none;
+}
+.footer-widget .foot-widget-title{
+cursor:pointer;
+}
+#featureContact{
+max-width:600px;
+margin:auto;
+}
+}
+@media screen and (max-width: 628px){
+.breakmobile{
+display:block;
+visible:hidden;
+height:1px;
+padding:0px;
+border:none;
+}
+.applyLink, .visitLink, .watchLink{
+font-size:2.8em;
+}
+ .applyLink, .visitLink, .watchLink,.phoneNumberLink, .giveLink, .myLeo{
+display:inline-block;
+}
+.footerTop .footerTopLinks{
+display:block;
+width:100%;
+}
+.myLeoLink{
+top:-10px;
+vertical-align:top;
+}
+.featureContactVerticalSeperator{
+position:relative;
+top:-13px;
+}
+.addressLink, .systemsLink{
+line-height:24px;
+font-size:1em;
+position:relative;
+top:-10px;
+
+}
+#featureContact{
+max-width:380px;
+margin:auto;
+}
+}
+<<<<<<< HEAD
+
+@media screen and (max-width: 1025px){
+.b-search-box input{
+max-width: 600px;
+=======
+--------------------------------------------------------
+=======
+	top:8px;
+>>>>>>> master
+}
+>>>>>>> origin/master
+=======
+>>>>>>> test-branch
 .featureContactSeperator {
 	border-left:1px solid #003976;
 	padding-top:9px;
@@ -15185,181 +15465,6 @@ margin:auto;
 }
 }
 <<<<<<< HEAD
-
-@media screen and (max-width: 1025px){
-.b-search-box input{
-max-width: 600px;
-=======
---------------------------------------------------------
-=======
-	top:8px;
->>>>>>> master
-}
->>>>>>> origin/master
-.featureContactSeperator {
-	border-left:1px solid #003976;
-	position:relative;
-	bottom:3px;
-	padding-top:20px
-}
-.featureContactVerticalSeperator {
-	display:block;
-	border-top:1px solid #003976;
-	margin-bottom:6px;
-}
-.addressLink {
-	float:right;
-}
-.systemsLink {
-	float:left;
-}
-.addressLink, .systemsLink {
-	font-family: 'din', sans-serif;;
-	color:#a17000;
-	text-decoration:none;
-	font-size:0.8em;
-	position:relative;
-	z-index:2;
-}
-.footerBottom {
-	font-family: 'din', sans-serif;;
-	background:#00314c;
-	padding:2em 0;
-}
-.footer-widget ul {
-	list-style:none;
-	margin:0px;
-	padding:0px;
-}
-.footer-widget .foot-widget-title {
-	text-transform:uppercase;
-	color:#c0dff0;
-}
-.footer-widget ul li a, .footer-widget ul li {
-	text-decoration:none;
-	color:#afc7d6;
-	text-transform:uppercase;
-	font-size:0.9em;
-	line-height:2em;
-}
-.footer-widget ul li a:hover {
-	color:#fff;
-	transition:0.5s all;
-}
-.footer-widget ul li .text-reset {
-	text-transform:none !important;
-}
-.footer-widget ul li .fa {
-	margin-right:5px;
-}
-.footer-widget .footer-drop {
-	display:none;
-}
-@media screen and (max-width: 1100px){
-.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
-font-size:3em;
-}
-.featureContactSeperator{
-padding-top:10px;
-}
-#featureContact{
-max-width:900px;
-margin:auto;
-}
-}
-@media screen and (max-width: 990px){
-.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
-font-size:2.4em;
-}
-.featureContactSeperator{
-padding-top:10px;
-}
-#featureContact{
-max-width:800px;
-margin:auto;
-}
-}
-@media all and (min-width: 768px) {
-.check-media {
- width:990px;
-}
-.footer-widget .foot-widget-area {
- display:block !important;
-}
-}
-
-@media screen and (max-width: 767px){
-.b-categories-icons__item_icon .fa {
-  width: 20px;
-  height: 20px;
-}
-.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
-font-size:2em;
-
-}
-.myLeoLink {
-width:110px;
-}
-.featureContactSeperator{
-padding-top:6px;
-margin:0px 5px;
-}
-.addressLink, .systemsLink{
-display:block;
-float:none;
-}
-.footer-widget .footer-drop {
- display:inline;
-}
-.footer-widget .foot-widget-area {
- display:none;
-}
-.footer-widget .foot-widget-title{
-cursor:pointer;
-}
-#featureContact{
-max-width:600px;
-margin:auto;
-}
-}
-@media screen and (max-width: 628px){
-.breakmobile{
-display:block;
-visible:hidden;
-height:1px;
-padding:0px;
-border:none;
-}
-.applyLink, .visitLink, .watchLink{
-font-size:2.8em;
-}
- .applyLink, .visitLink, .watchLink,.phoneNumberLink, .giveLink, .myLeo{
-display:inline-block;
-}
-.footerTop .footerTopLinks{
-display:block;
-width:100%;
-}
-.myLeoLink{
-top:-10px;
-vertical-align:top;
-}
-.featureContactVerticalSeperator{
-position:relative;
-top:-13px;
-}
-.addressLink, .systemsLink{
-line-height:24px;
-font-size:1em;
-position:relative;
-top:-10px;
-
-}
-#featureContact{
-max-width:380px;
-margin:auto;
-}
-}
 --------------------------------------------------------
 .featureContactSeperator {
 	border-left:1px solid #003976;
@@ -15412,6 +15517,12 @@ margin:auto;
 .footer-widget ul li .fa {
 	margin-right:5px;
 >>>>>>> origin/master
+=======
+
+@media screen and (max-width: 1025px){
+.b-search-box input{
+max-width: 600px;
+>>>>>>> test-branch
 }
 }
 @media screen and (max-width: 767px){
@@ -15425,6 +15536,7 @@ margin:auto;
 }
 .b-logo img{
 max-width:100px;
+<<<<<<< HEAD
 }
 .b-header-ico-group .fa,.f-top-nav-show-slide{
 font-size:18px;
@@ -15450,6 +15562,27 @@ max-width: 320px;
 max-width:220px;
 }
 >>>>>>> origin/master
+=======
+}
+.b-header-ico-group .fa,.f-top-nav-show-slide{
+font-size:18px;
+padding:0px;
+line-height:100%;
+}
+span.b-header-ico.b-header-ico-cart-parent{
+  padding-top: 24px;
+}
+.b-search-box input{
+height:66px;
+  top: -24px;
+}
+.b-search-box input{
+max-width: 320px;
+}
+
+}
+
+>>>>>>> test-branch
 @media screen and (min-width: 1025px){
 .b-top-nav__1level .b-ico-dropdown{
 top:39px;

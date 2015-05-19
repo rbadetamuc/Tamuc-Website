@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> test-branch
 /* Add here all your JS customizations */
 jQuery(document).ready(function($) {
 	checkSize();
@@ -48,6 +51,7 @@ function checkSize(){
 		$('.foot-widget-title').off( "click");
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 <<<<<<< HEAD
@@ -59,3 +63,6 @@ function checkSize(){
 >>>>>>> origin/master
 >>>>>>> master
 >>>>>>> origin/master
+=======
+}
+>>>>>>> test-branch
