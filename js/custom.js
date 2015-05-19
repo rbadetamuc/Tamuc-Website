@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 	});
 });
 function checkSize(){
-	if ($(window).width() < BREAK.LG) {
+	if ($(window).width() < BREAK.SM) {
 		$('.foot-widget-area').hide();
 	 // Mobile stuff.
 	$('.foot-widget-title').on( "click", function(e) {
@@ -35,8 +35,9 @@ function checkSize(){
 		$(this).next().slideToggle();
 		$(this).find('.fa').ToggleClass('');
 	});
-	}else{
-		$('.foot-widget-title').off( "click");
+	}if ($(window).width() > BREAK.SM) {{
 		$('.foot-widget-area').show();
+		$('.foot-widget-title .fa').hide();
+		$('.foot-widget-title').off( "click");
 	}
 }
