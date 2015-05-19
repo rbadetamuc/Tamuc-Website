@@ -30,10 +30,10 @@ jQuery(function ($) {
             $('.j-top-nav-show-slide').on('click', function () {
                 var $cloneNav = $('.j-menu-container .j-top-nav');
                 if (!self.dropMenuVisible) {
-                    $('.j-top-nav').clone().prependTo(self.mobileMenuContainer).addClass('b-top-nav-dropdown').addClass('f-top-nav-dropdown').animate({height: "toggle"}, 700);
+                    $('.j-top-nav').clone().prependTo(self.mobileMenuContainer).addClass('b-top-nav-dropdown').addClass('f-top-nav-dropdown').animate({height: "toggle"}, 300);
                     self.dropMenuVisible = true;
                 } else {
-                    $cloneNav.animate({height: "toggle"}, 700, function () {
+                    $cloneNav.animate({height: "toggle"}, 300, function () {
                         $cloneNav.remove();
                     });
                     self.dropMenuVisible = false;
@@ -47,7 +47,7 @@ jQuery(function ($) {
                 var $liFirstLevel = $(this).parents('.b-top-nav__1level');
                 $liFirstLevel.toggleClass('is-active-top-nav__dropdown');
                 $liFirstLevel.find('.fa').toggleClass('fa-arrow-circle-down').toggleClass('fa-arrow-circle-up');
-                $liFirstLevel.find('.b-top-nav__dropdomn').slideToggle('slow');
+                $liFirstLevel.find('.b-top-nav__dropdomn').slideToggle(600);
                 return false;
             });
         },
@@ -741,32 +741,20 @@ jQuery(function ($) {
                 self.btnToTop();
             } else {
                 $('body').removeClass('is-fixed-header').css('padding-top', '0' + 'px');
-<<<<<<< HEAD
-                self.$header.removeClass('animated fadeInDown');
-=======
                 self.$header.removeClass('animated ');
->>>>>>> origin/master
             }
         },
         checkHeaderPosition: function () {
             var self = this;
             if (self.windowScrollTop > self.headerBreakHeight && !self.headerFixed) {
                 $('body').addClass('is-fixed-header').css('padding-top', self.$header.outerHeight() + 'px');
-<<<<<<< HEAD
-                self.$header.addClass('animated fadeInDown');
-=======
                 self.$header.addClass('animated ');
->>>>>>> origin/master
                 self.$slider.addClass('is-active').css('top', self.$header.outerHeight() + 'px');
                 self.headerFixed = true;
             }
             else if (self.windowScrollTop <= self.headerBreakHeight && self.headerFixed) {
                 $('body').removeClass('is-fixed-header').css('padding-top', '0px');
-<<<<<<< HEAD
-                self.$header.removeClass('animated fadeInDown');
-=======
-                self.$header.removeClass('animated ');
->>>>>>> origin/master
+                self.$header.removeClass('animated');
                 self.$slider.removeClass('is-active');
                 self.headerFixed = false;
             }
@@ -801,30 +789,28 @@ jQuery(function ($) {
         },
         dropDownMenuAnimation: function () {
             var self = this;
+			var dropopen = false;
+
             if ($(window).width() > BREAK.LG) {
-                self.menuTop.click(function (e) {
-					e.preventDefault();
-					self.menuTop.removeClass('active');
-					$('.b-top-nav__dropdomn').slideUp(300);
-					if($(this).next().is(':hidden')){					
+					self.menuTop.click(function (e) {
+						var target = this;
+					e.preventDefault();									
+					if($(this).next().is(':hidden')){	
 						self.menuTop.removeClass('active');
 						$('.b-top-nav__dropdomn').slideUp(300);
-						$(this).next().slideDown(300);
-						$(this).addClass('active');
+						$(this).next().slideDown(300,function(){
+							$(target).addClass('active');
+							$(this).addClass('dropopen');
+						});
+						return;
+					}else {
+						$('.b-top-nav__dropdomn.dropopen').slideUp(300,function(){
+							$(this).removeClass('dropopen');
+							$(target).removeClass('active');
+						});						
 					}
-                    /* $(this).find('.b-top-nav__dropdomn')
-                        .css('display', 'block')
-                        .animate({
-                            opacity: 1
-                        }, 400);
-                }, function () {
-                    $(this).find('.b-top-nav__dropdomn')
-                        .animate({
-                            opacity: 0
-                        }, 400, function(){
-                            $(this).css('display', '');
-                        }); */
-                })
+  
+                });
             } else {
                 self.menuTopLevel.find('.b-top-nav__dropdomn').css('opacity', '');
             }
