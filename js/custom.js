@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+>>>>>>> origin/master
 /* Add here all your JS customizations */
 jQuery(document).ready(function($) {
 	checkSize();
@@ -40,4 +47,15 @@ function checkSize(){
 		$('.foot-widget-title .fa').hide();
 		$('.foot-widget-title').off( "click");
 	}
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+=======
+/* Add here all your JS customizations */
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master

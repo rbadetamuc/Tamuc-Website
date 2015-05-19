@@ -754,7 +754,19 @@ jQuery(function ($) {
             }
             else if (self.windowScrollTop <= self.headerBreakHeight && self.headerFixed) {
                 $('body').removeClass('is-fixed-header').css('padding-top', '0px');
+<<<<<<< HEAD
                 self.$header.removeClass('animated');
+=======
+<<<<<<< HEAD
+                self.$header.removeClass('animated');
+=======
+<<<<<<< HEAD
+                self.$header.removeClass('animated fadeInDown');
+=======
+                self.$header.removeClass('animated ');
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
                 self.$slider.removeClass('is-active');
                 self.headerFixed = false;
             }

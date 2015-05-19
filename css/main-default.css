@@ -2923,11 +2923,21 @@ header {
 }
 .b-search-box input {
 	display: none;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	font-size: 3.2em;
+=======
+<<<<<<< HEAD
+	font-size: 3.2em;
+	line-height: 1.33333;
+>>>>>>> origin/master
 	position: absolute;
 	top: -36px;
 	right: 4px;
 	z-index: 1;
 	width: 1020px;
+<<<<<<< HEAD
 	padding: 0 30px 0 10px;
 	height: 92px;
 	border: 0;
@@ -2936,6 +2946,29 @@ header {
 	font-size: 1.8em;
 	background-color: #0e1d31;
 	color: #afcada;
+=======
+	padding: 0 30px 0 6px;
+	color: #fff;
+=======
+	font-size: 1.2em;
+>>>>>>> master
+	line-height: 1.33333;
+	position: absolute;
+	top: -12px;
+	right: 4px;
+	z-index: 1;
+	border: 1px solid #083752;
+	height: 55px;
+	background: #083752;
+	width: 1020px;
+	padding: 0 30px 0 6px;
+<<<<<<< HEAD
+	color: #fff;
+=======
+	color: #666666;
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
 }
 /* .b-search-box:hover input {
 	display: block;
@@ -13778,12 +13811,32 @@ to {
 .b-option--resize .fa.fa-horizontal {
 	-moz-transform: rotate(270deg);
 	/* ??? Firefox */
+=======
+<<<<<<< HEAD
+	/* ??? Firefox */
       -ms-transform: rotate(270deg);
 	/* ??? IE */
       -webkit-transform: rotate(270deg);
 	/* ??? Safari, Chrome, iOS */
       -o-transform: rotate(270deg);
 	/* ??? Opera */
+<<<<<<< HEAD
+=======
+=======
+	/* Для Firefox */
+>>>>>>> master
+      -ms-transform: rotate(270deg);
+	/* ??? IE */
+      -webkit-transform: rotate(270deg);
+	/* ??? Safari, Chrome, iOS */
+      -o-transform: rotate(270deg);
+<<<<<<< HEAD
+	/* ??? Opera */
+=======
+	/* Для Opera */
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
       transform: rotate(270deg);
 }
 .b-option--resize .fa.fa-current, .b-option--resize .fa:hover {
@@ -14685,6 +14738,21 @@ textarea.b-product-card-textarea {
 body{
 min-width:380px;
 }
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+/* Custom CSS */
+
+body{
+min-width:380px;
+}
+=======
+
+
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
 .b-categories-icons__item_icon .fa{
 width:30px;
 height:30px;
@@ -14713,35 +14781,103 @@ background-color:#edb111;
 color:#fff;
 }
 
+<<<<<<< HEAD
 #footer {
 	font-family: 'din', sans-serif;;
 }
 
+=======
+<<<<<<< HEAD
+#footer {
+	font-family: 'din', sans-serif;;
+}
+.check-media {
+	display:none;
+	width:0;
+}
+=======
+<<<<<<< HEAD
+#footer {
+	font-family: 'din', sans-serif;;
+}
+.check-media {
+	display:none;
+	width:0;
+}
+=======
+/* Footer */
+#footer {
+	font-family: 'din', sans-serif;;
+}
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
 .footerTop {
 	background-color:#edb111;
 	padding:5px 0px;
 	text-transform:uppercase;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+>>>>>>> origin/master
 .footerTop .footerTopLinks{
 display:table;
 width:100%;
 }
+<<<<<<< HEAD
+#featureContact {
+	text-align:center;
+}
+
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo {
+	font-size:3.8em;
+=======
 #featureContact {
 	text-align:center;
 }
 
 .applyLink, .visitLink, .watchLink, .giveLink,.phoneNumberLink, .myLeo{
 	font-size:3.8em;
+<<<<<<< HEAD
+=======
+=======
+#featureContact {
+	text-align:center;
+}
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeoLink {
+	font-size:2.65em;
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
 	font-weight:900;
 	font-family: 'din', sans-serif;;
 	text-decoration:none;
 	color:#fff;
 	display:table-cell;
 }
+<<<<<<< HEAD
 .applyLink:hover, .visitLink:hover, .watchLink:hover, .giveLink:hover{
 	color:#004474;
 }
 .phoneNumberLink, .myLeo {
+=======
+.phoneNumberLink, .myLeo {
+=======
+<<<<<<< HEAD
+	display:table-cell;
+
+}
+.phoneNumberLink, .myLeo {
+=======
+}
+.phoneNumberLink, .myLeoLink {
+>>>>>>> origin/master
+>>>>>>> master
+>>>>>>> origin/master
 	color:#004474
 }
 .myLeoLink{
@@ -14749,6 +14885,9 @@ width:100%;
 	height:50px;
 	display:inline-block;
 	position:relative;
+	top:3px;
+=======
+<<<<<<< HEAD
 	top:3px;
 }
 .featureContactSeperator {
@@ -15045,10 +15184,234 @@ max-width:380px;
 margin:auto;
 }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 1025px){
 .b-search-box input{
 max-width: 600px;
+=======
+--------------------------------------------------------
+=======
+	top:8px;
+>>>>>>> master
+}
+>>>>>>> origin/master
+.featureContactSeperator {
+	border-left:1px solid #003976;
+	position:relative;
+	bottom:3px;
+	padding-top:20px
+}
+.featureContactVerticalSeperator {
+	display:block;
+	border-top:1px solid #003976;
+	margin-bottom:6px;
+}
+.addressLink {
+	float:right;
+}
+.systemsLink {
+	float:left;
+}
+.addressLink, .systemsLink {
+	font-family: 'din', sans-serif;;
+	color:#a17000;
+	text-decoration:none;
+	font-size:0.8em;
+	position:relative;
+	z-index:2;
+}
+.footerBottom {
+	font-family: 'din', sans-serif;;
+	background:#00314c;
+	padding:2em 0;
+}
+.footer-widget ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.footer-widget .foot-widget-title {
+	text-transform:uppercase;
+	color:#c0dff0;
+}
+.footer-widget ul li a, .footer-widget ul li {
+	text-decoration:none;
+	color:#afc7d6;
+	text-transform:uppercase;
+	font-size:0.9em;
+	line-height:2em;
+}
+.footer-widget ul li a:hover {
+	color:#fff;
+	transition:0.5s all;
+}
+.footer-widget ul li .text-reset {
+	text-transform:none !important;
+}
+.footer-widget ul li .fa {
+	margin-right:5px;
+}
+.footer-widget .footer-drop {
+	display:none;
+}
+@media screen and (max-width: 1100px){
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:3em;
+}
+.featureContactSeperator{
+padding-top:10px;
+}
+#featureContact{
+max-width:900px;
+margin:auto;
+}
+}
+@media screen and (max-width: 990px){
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:2.4em;
+}
+.featureContactSeperator{
+padding-top:10px;
+}
+#featureContact{
+max-width:800px;
+margin:auto;
+}
+}
+@media all and (min-width: 768px) {
+.check-media {
+ width:990px;
+}
+.footer-widget .foot-widget-area {
+ display:block !important;
+}
+}
+
+@media screen and (max-width: 767px){
+.b-categories-icons__item_icon .fa {
+  width: 20px;
+  height: 20px;
+}
+.applyLink, .visitLink, .watchLink, .phoneNumberLink, .giveLink, .myLeo{
+font-size:2em;
+
+}
+.myLeoLink {
+width:110px;
+}
+.featureContactSeperator{
+padding-top:6px;
+margin:0px 5px;
+}
+.addressLink, .systemsLink{
+display:block;
+float:none;
+}
+.footer-widget .footer-drop {
+ display:inline;
+}
+.footer-widget .foot-widget-area {
+ display:none;
+}
+.footer-widget .foot-widget-title{
+cursor:pointer;
+}
+#featureContact{
+max-width:600px;
+margin:auto;
+}
+}
+@media screen and (max-width: 628px){
+.breakmobile{
+display:block;
+visible:hidden;
+height:1px;
+padding:0px;
+border:none;
+}
+.applyLink, .visitLink, .watchLink{
+font-size:2.8em;
+}
+ .applyLink, .visitLink, .watchLink,.phoneNumberLink, .giveLink, .myLeo{
+display:inline-block;
+}
+.footerTop .footerTopLinks{
+display:block;
+width:100%;
+}
+.myLeoLink{
+top:-10px;
+vertical-align:top;
+}
+.featureContactVerticalSeperator{
+position:relative;
+top:-13px;
+}
+.addressLink, .systemsLink{
+line-height:24px;
+font-size:1em;
+position:relative;
+top:-10px;
+
+}
+#featureContact{
+max-width:380px;
+margin:auto;
+}
+}
+--------------------------------------------------------
+.featureContactSeperator {
+	border-left:1px solid #003976;
+	padding-top:9px;
+	position:relative;
+	bottom:3px;
+}
+.featureContactVerticalSeperator {
+	display:block;
+	border-top:1px solid #003976;
+	margin-bottom:6px;
+}
+.addressLink {
+	float:right;
+}
+.systemsLink {
+	float:left;
+}
+.addressLink, .systemsLink {
+	font-family: 'din', sans-serif;;
+	color:#a17000;
+	text-decoration:none;
+	font-size:0.8em;
+}
+.footerBottom {
+	font-family: 'din', sans-serif;;
+	background:#00314c;
+	padding:2em 0;
+}
+.footer-widget ul {
+	list-style:none;
+}
+.footer-widget .foot-widget-title {
+	text-transform:uppercase;
+	color:#c0dff0;
+}
+.footer-widget ul li a, .footer-widget ul li {
+	text-decoration:none;
+	color:#afc7d6;
+	text-transform:uppercase;
+	font-size:0.9em;
+	line-height:2em;
+}
+.footer-widget ul li a:hover {
+	color:#fff;
+}
+.footer-widget ul li .text-reset {
+	text-transform:none !important;
+}
+.footer-widget ul li .fa {
+	margin-right:5px;
+>>>>>>> origin/master
 }
 }
 @media screen and (max-width: 767px){
@@ -15080,7 +15443,13 @@ max-width: 320px;
 }
 
 }
+<<<<<<< HEAD
 
+=======
+.b-news-item__img{
+max-width:220px;
+}
+>>>>>>> origin/master
 @media screen and (min-width: 1025px){
 .b-top-nav__1level .b-ico-dropdown{
 top:39px;
